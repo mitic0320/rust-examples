@@ -1,0 +1,12 @@
+[package]
+name = "rust-examples"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libp2p = { version="0.46.1", features=["tcp-tokio", "mdns", "gossipsub", "floodsub","dcutr"]}
+futures = "*"
+async-std = { version="*", features=["attributes"]}
+
